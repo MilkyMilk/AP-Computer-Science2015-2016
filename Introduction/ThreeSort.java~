@@ -1,0 +1,10 @@
+/*
+ * Write a program that takes three int values from the command line and prints them in ascending order. 
+ * Use Math.min() and Math.max(). You may not use if statements.  Sorry, we'll learn that next in the next section! 
+ */
+
+
+
+public class ThreeSort {
+  public static main void(String[] args) {
+    

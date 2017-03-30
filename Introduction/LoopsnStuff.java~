@@ -1,0 +1,11 @@
+public class LoopsnStuff {
+  public static void main(String[] args); {
+    i = 0;
+    while (i <= 100){
+      x = (int) (Math.random() * 100 + 1);
+      System.out.println(x);
+      i++;
+    }
+      
+      
+  

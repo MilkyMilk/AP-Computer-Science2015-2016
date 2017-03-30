@@ -1,0 +1,12 @@
+public class merFrequency {
+  public int count(String dna, int k) {
+    //letters ACTG
+    String[] merPos = new String[(int) Math.pow(k,4)];
+    for (
+    String currentRun;
+//    for (int i = k; i < dna.length() - k; i++) {
+//      currentRun = dna.substring(
+//    }
+  }
+  
+}

@@ -1,0 +1,14 @@
+/* Order check. Write a program that takes three double values x, y, and z as command-line arguments and 
+ * prints true if the values are strictly ascending or descending (x < y < z or x > y > z), and false otherwise.
+
+Exercise 1.2.30
+
+Uniform random numbers. Write a program that prints five uniform random values between 0 and 1, 
+their average value, and their minimum and maximum value. Use Math.random(), Math.min(), and Math.max().
+
+ 
+
+Remember:  You can not use if statements or any programming concepts beyond Section 1.2
+
+Hint:  You might have to make a method call to Math.min() and Math.max() multiple times!
+*/

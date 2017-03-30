@@ -1,0 +1,6 @@
+public class Recursion {
+  public static void print() {
+    System.out.print("*");
+    print()
+  }
+}

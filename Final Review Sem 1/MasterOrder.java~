@@ -1,0 +1,18 @@
+public class MasterOrder {
+  private List<CookieOrder> orders;
+  
+  public MasterOrder () {
+    orders = new ArrayList<CookieOrder>();
+  }
+  
+  public void addOrder(CookieOrder theOrder) {
+    orders.add(theOrder);
+  }
+  
+  public int getTotalBoxes() {
+    int count = 0;
+    for (int i = 0; i < orders.length(); i++) {
+      count += orders.get(i).getNumBoxes();
+    }
+  }
+}

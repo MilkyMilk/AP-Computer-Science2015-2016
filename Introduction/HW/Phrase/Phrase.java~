@@ -1,0 +1,42 @@
+public class Phrase
+{
+    private String myPhrase;
+    
+    public Phrase()
+    {
+        myPhrase = "";
+    }
+    
+    public Phrase(String str)
+    {
+        myPhrase = str;
+    }
+    
+    /**
+     * finds the first occurence of find and replaces it with replace
+     * post-condition:  myPhrase is updated with the find and replace operation 
+     *
+     * @param find      the text you are finding for replacement
+     * @param replace   the text you are replacing find with
+     * 
+     */
+    private void findAndReplaceFirst(String find, String replace)
+    {
+         
+         // your code goes here   
+        
+    }
+    
+    public void findAndReplaceAll(String find, String replace)
+    {
+        // your code goes here and must call the findAndReplaceFirst method
+        // you wrote above.  Notice, this is a void method -- you are updating
+        // the instance variable myPhrase
+    }
+    
+    public String toString() 
+    {
+        return myPhrase;
+    }
+}
+    

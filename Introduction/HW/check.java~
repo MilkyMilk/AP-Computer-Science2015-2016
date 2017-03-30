@@ -1,0 +1,13 @@
+public class check {
+  public static void main(String[] args) {
+    char[] ISBN = isbn.toCharArray();
+    int sum = 0;
+    for (int i = 0; i <=8; i++) {
+      int number = Integer.parseInt(ISBN[i]);
+      total = total + number * (10 - i);
+    }
+    
+    
+    
+  }
+}

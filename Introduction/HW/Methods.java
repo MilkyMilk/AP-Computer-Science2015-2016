@@ -1,0 +1,215 @@
+import java.util.*;
+public class Methods {
+  //a satic method is a Class method, not an object method
+  public static boolean isEven (int N) {
+    if (N % 2 == 0)
+      return true;
+    else
+      return false;
+  }
+  public static int randomNumber(int a, int b) {
+    int max = Math.max(a,b);
+    int min = Math.min(a,b);
+    return min + (int) (Math.random() * (max-min + 1));
+  }
+  
+  public static int abs(int x) {
+    if (x < 0)
+      x = -x;
+    return x;
+  }
+  
+  public static int search(int[] arr, int key){
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] == key)
+        return i; 
+    }
+    return -1;
+  }
+  
+  public static int maximum(int[] arr){
+    int max = Integer.MIN_VALUE;
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] > max)
+        max = arr[i];
+    }
+    return max;  
+  }
+  
+  public static double average(int[] arr){
+    int sum = 0;
+    for (int i = 0; i < arr.length; i++) {
+      sum += arr[i];
+    }
+    return ((sum * 1.0) / arr.length);
+  }
+  
+  public static void swap(String[] arr, int index1, int index2){
+    String temp = arr[index1];
+    arr[index1] = arr[index2];
+    arr[index2] = temp;
+  }
+  
+  public static boolean containsEqualConsecutives(int[] arr){
+    for (int i = 0; i < arr.length-1; i++) {
+      if (arr[i] == arr[i+1])
+        return true;
+    }
+    return false;
+  }
+  
+  public static boolean allEven(int[] arr) {
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 != 0)
+        return false;
+    }
+    return true;
+  }
+  
+  public static void printArray(int[] array){
+    for (int i = 0; i < array.length; i++) {
+      System.out.print(array[i] + " ");
+    }
+  }
+  
+  public static void circularShiftRight(int[] arr){
+    int last = arr[arr.length-1];
+    for (int i = arr.length-1; i > 0; i--) {
+      arr[i] = arr[i-1];
+    }
+    arr[0] = last;
+  }
+  
+  public static int[] frequency(int[] arr) {
+    int[] frequency = new int [7];
+    for (int i = 0; i < arr.length; i++) {
+       frequency[arr[i]]++;
+    }
+    return frequency;
+  }
+  
+  public static int randomAB(int a, int b) {
+    int max = Math.max(a,b);
+    int min = Math.min(a,b);
+    int number = min + ((int) (Math.random() * (max - min + 1)));
+    return number;
+  }
+  
+  public static void bubbleSort(int[] arr){  
+    for (int j = 0; j < arr.length-1; j++) {
+       for (int i = 0; i < arr.length-1; i++) {
+         if (arr[i+1] > arr[i]) {
+           int temp = arr[i];
+           arr[i] = arr[i+1];
+           arr[i+1] = temp;
+         }
+       }
+    }
+  }
+  
+  public static int gcd (int a, int b){
+    int big = Math.max(a,b);
+    int small = Math.min(a,b);
+    for (int i = small; small > 1; i--) {
+      if (big % i == 0 && small % i == 0)
+        return i;
+    }
+    return 1;
+  }
+  
+  public static void combo (int[] arr) {
+    int count = 0;
+    for (int i = 0; i < (arr.length -1); i++) {
+      for (int k = i + 1; k < (arr.length); k++) {
+         System.out.print(arr[i] + "," + arr[k] + " | ");
+         count++;
+      }
+      System.out.println();
+    }
+    System.out.println("There are " + count + " combinations");
+  }
+  
+  public static boolean containsDuplicates(int[] arr){
+     for (int i = 0; i < (arr.length -1); i++) {
+      for (int k = i + 1; k < (arr.length); k++) {
+        if (arr[k] == arr[i])
+          return true;
+      }
+    }
+     return false;
+  }
+
+  public static String remove(String phrase, String word) {
+    int index = phrase.indexOf(word);
+    String result;
+    if (index != -1) 
+      result = phrase.substring(0, index) + phrase.substring(index + word.length()); 
+    else
+      result = "Phrase doesn't contain word";
+    return result;
+  }
+  
+  public static String removeAll(String phrase, String word) {
+    String result = remove(phrase, word);
+    while (result.indexOf(word) != -1) {
+      result = remove(phrase, word);
+    }
+    return result;
+  }
+  
+  public static void removeDuplicates(List<String> list) {
+    Collections.sort(list);
+    for (int i = list.size()-2; i >= 0; i--)
+       if (list.get(i).equals(list.get(i+1)))
+         list.remove(i+1);
+    System.out.println(list);
+    }
+  
+  public static String lastNameFirst(String name) {
+    int index = name.indexOf(" ");
+    return name.substring(index+1) + ", " + name.substring(0,index);
+  }
+  
+  public static int countX(String str) {
+    int count = 0;
+    for (int i = 0;  i < str.length(); i++) {
+      if (str.substring(i,i+1).equals("x"))
+        count++;
+      else if (str.substring(i,i+1).equals("X"))
+        count++;
+    }
+    return count;
+  }
+
+
+  
+  public static void insert(List<String> menu, String food) {
+    for (int i = 0; i < menu.size(); i++) {
+      if (menu.get(i).compareTo(food) >= 0) {
+        menu.add(i, food);
+        break;
+      }
+      else if (i == menu.size()-1) {
+        menu.add(food);
+        break;
+      }
+    }
+  }
+
+  public static int countIng(String[][] words) {
+    int count = 0;
+    for (String[] arr : words) {
+      for (String str : arr) {
+        if (str.indexOf("ing") >= 0) 
+          count++;
+      }
+    }
+    return count;
+  }
+  
+  public static void main(String[] args) {
+    String[][] arr = {{"lol", "loling", "ripping"}, {"counting", "count", "super", "supering"}};
+    System.out.println(countIng(arr));
+  }
+}
+  

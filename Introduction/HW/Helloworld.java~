@@ -1,0 +1,23 @@
+public class Helloworld {
+  public static void main(String[] args) {
+    boolean x = false;
+    boolean x= true;
+    if (x || y)
+      System.out.print("dd");
+  }
+  
+  
+/*1: B (c is second choice but syntax errors)
+ *2: 
+ *3: 
+ *4: 
+ *5: 
+ *6:
+ *7:
+ *8:
+ * 
+ * 
+ * 
+ * 
+ * 
+ * /

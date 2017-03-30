@@ -1,0 +1,43 @@
+import java.util.*;
+public class merBruteRevised {
+  public static void count(String dna, int k) {
+    //Overarching variables
+    int masterCount = 0;
+    ArrayList<String> mer = new ArrayList<String>(); //stores the mers
+    ArrayList<String> merCount = new ArrayList<Integer>(); //stores mers occurences (mer.get(0) --> merCount.get(0)
+    
+    //runs mer by mer through entire string
+    for (int i = 0; i < dna.length() - k + 1; i++) { 
+ 
+      //scans string for all of one mer
+      int count = 0;
+      String currentRun = dna.substring(i, i+k); // change 0 to i when master looped
+      
+      int crNew = 0;
+      for (int j = i; j < mer.length; j++) {
+        if (currentRun.equals(mer.get(j)))
+          crNew = 5;
+      }
+
+
+      
+
+
+      //Compares count and Current run to master
+      if (count > masterCount) {
+        masterCount = count;
+        ties.clear();
+        ties.add(currentRun);
+      } else if (count == masterCount) {
+        ties.add(currentRun);
+      }
+    }
+    System.out.println(masterCount);
+    System.out.println(ties.toString());
+  }
+  
+  
+    public static void main(String[]args){
+    count("AAAATTTTCGCGCTTCGCTCGGCTTCGGCTTCGGCTTCGATAGATTATATATAGAGACAAACGTACGTACGTACGCTAACGTCATCGATCCGTACGTACGCTGA",4);
+  }
+}

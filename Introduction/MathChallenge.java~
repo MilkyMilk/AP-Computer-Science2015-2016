@@ -1,0 +1,8 @@
+public class MathChallenge {
+  public static void main(String[] args){
+    int a = 3
+    int c = Math.max(a);
+    
+    System.out.println(c);
+  }
+}

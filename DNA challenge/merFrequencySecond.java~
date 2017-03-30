@@ -1,0 +1,16 @@
+import java.util.*; 
+public class merFrequency {  
+  public static void count(String dna, int k) {
+    ArrayList<String> mers = new ArrayList<String>();
+    ArrayList<int> mersCount = new ArrayList<int>();
+    
+    for (int i = 0; i <dna.length()-k+1; i++) {
+      currentRun = dna.substring(i, i+k);
+      for (int j = 0; i < mer.size(); j++) {
+        if (mers.get(j).equals(currentRun);
+            merCount(j)++;
+      }
+    }
+    
+  }
+}

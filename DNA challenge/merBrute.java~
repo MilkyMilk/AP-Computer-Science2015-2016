@@ -1,0 +1,20 @@
+public class merBrute {
+  public static void count(String dna, int k) {
+    
+    
+    //scans string for all of first one
+    int count = 0;
+    String currentRun = dna.substring(i, i+k);
+    for (int j = 0; j < dna.length() - k; j++) {
+      if (dna.substring(j, j+k).equals(currentRun))
+        count++;
+    }
+    
+    System.out.println(count);
+    System.out.println(currentRun);
+  }
+  
+    public static void main(String[]args){
+    count("AAAGGGTTTTTTTTTTTT",3);
+  }
+}

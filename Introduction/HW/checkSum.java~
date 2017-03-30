@@ -1,0 +1,19 @@
+public class checkSum {
+  public static void main(String[] args) {
+    int input = Integer.parseInt(args[0]);
+    double inputSum = 0;
+    int multiplyer = 1;
+    //find the sum of the 9 digit input
+    for (int i = 10; i <= 1e10; i = i * 10) {
+      int number = input % 10;
+      System.out.println(number);
+      inputSum = inputSum + (number * i);
+      System.out.println(inputSum);
+      input = input/10;
+      multiplyer++;
+    }
+    int checkSum = (int) (inputSum % 11);
+    System.out.println(checkSum);
+  }
+}
+

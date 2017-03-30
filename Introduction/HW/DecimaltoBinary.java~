@@ -1,0 +1,26 @@
+public class DecimaltoBinary {
+  public static void main(String[] args) {
+    long decimal = Long.parseLong(args[0]);
+
+    // 10010011 % 10 -> 1
+    // 10010011 / 10 -> 100100
+    int power = 0;
+    // decimal = 2^0 + 2^1 + 2^4 + 2^7
+    int decimal = 0;
+    while (decimal != 0) {
+      long digit = binary % 10; //extract right most digit    
+      if (digit == 1) 
+        decimal = decimal + (int) Math.pow(2,power);
+      
+      binary = binary / 10;
+
+      power++;
+
+    }
+
+    System.out.println("decimal: " + decimal);
+
+  }
+
+}
+

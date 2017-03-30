@@ -1,0 +1,34 @@
+class PacManPlayer {
+  //instance variables
+  private int lives;
+  private int score;
+  private String image; 
+  private boolean powerUp;
+  private static int numOfPlayers; 
+  // static variables are class variables
+  // shared between all objects of the PacManPlayer class
+  // static means that memory allocation happens once
+  
+  public PacManPlayer() {
+    lives = 3;
+    score = 0;
+    image = "msPacMan.png";
+    powerUp = false;
+  }
+  
+  public PacManPlayer(String img) {
+    lives = 3;
+    score = 0;
+    image = img;
+    powerUp = false;
+  }
+  
+  //getters
+  public int getLives() {
+    return lives;
+  }
+  
+  public int getScore() {
+    return score;
+  }
+}

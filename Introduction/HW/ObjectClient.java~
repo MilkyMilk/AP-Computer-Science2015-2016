@@ -1,0 +1,24 @@
+public class ObjectClient {
+  public static void main(String[] args) {
+    
+    Objects p = new Objects(3,4);
+    //System.out.println(p);
+    
+    Objects q;
+    q = new Objects(1,2);
+    
+    Objects total = p.divide(q);
+    Objects product = p.multiply(q);
+    p.square();
+    
+    System.out.println("divide: " + total);
+    System.out.println("multiply: " + product);
+    System.out.println("square: " + p);
+   //System.out.println(q);
+    
+    //Objects sum = p.add(q);
+    //System.out.println(sum);
+    
+    
+  }
+}

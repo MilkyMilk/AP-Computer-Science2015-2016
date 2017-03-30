@@ -1,0 +1,11 @@
+public class halloWarmUp {
+  public  static int  countWords(String text, String word) {
+    //returns the number of occurrences of a word in text
+    // return 0 if none occur
+    
+    int count = text.indexOf(word);
+    
+    
+    
+  }
+}

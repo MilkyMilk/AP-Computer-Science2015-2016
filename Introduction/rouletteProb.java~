@@ -1,0 +1,41 @@
+public class rouletteProb {
+  public static double main(int runX) {
+    //Statistical Probabilities
+    
+    //1-37 numbers
+    //you chose 5 ones @ a time
+    //what is the probabilty you win one spine of of x
+    int count = 0;
+    
+    
+    //runX for loop goes here
+    int[] guesses = [5];
+    for (int i =0; i<guesses.length; i++) {
+      guesses[i] =  (int) (Math.random() * 37) + 1;
+    }
+    
+    int spin = (int) (Math.random() * 37) + 1;
+    
+    for (int i=0; i<guesses.length; i++) {
+      if (spin == guesses[i]) 
+        count++;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+//    //caclucates roll and total
+//    for (int i = 0; i < Integer.parseInt(args[0]); i++) {
+//      
+//    }
+//    
+//    System.out.println("Empirical Probablilites");
+//    for (int i = 2; i <= 12; i++)
+//      System.out.println("Probablility of getting a " + i + ": " +  (counter[i] / (Integer.parseInt(args[0]) * 1.0)));
+    
+  }
+}

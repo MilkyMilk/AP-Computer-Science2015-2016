@@ -1,0 +1,6 @@
+public class Uniform {
+  public static void main(String[] args) {
+    int HowMany = Integer.parseInt(args[0]); //how many numbers to generate
+    int i = 0;
+    while (i <= HowMany){
+      int x = Math.random();

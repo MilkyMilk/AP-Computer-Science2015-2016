@@ -1,0 +1,5 @@
+//a UFO is a FlyingObject
+
+public class UFO implements FlyingObject {
+  
+}

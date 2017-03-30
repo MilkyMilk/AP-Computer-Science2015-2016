@@ -1,0 +1,9 @@
+public class test {
+  public static void main(String[]args){
+    int k = 3;
+    int arrayL = 1;
+    for (int i = 2; i <= k; i++) {
+      arrayL *= i;
+    }
+  }
+}

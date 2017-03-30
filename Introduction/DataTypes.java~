@@ -1,0 +1,10 @@
+public class DataTypes
+{
+  //Java is strongly typed language
+  
+  //types: int, double, char, boolean, string
+  //strings is a type but is not primitive (its considered a class)
+  
+  public static void main(String[] args)
+  {
+    

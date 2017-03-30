@@ -1,0 +1,14 @@
+/**
+ * Order Check and Uniform
+ * 
+ * @author Malcolm Scruggs
+ * 
+ * @Version September 10
+ */
+
+public class Order {
+  public static void main(String[] args) {
+    //number one
+    System.out.println(args[0] > args[1] > args[2] || args[2] > args[1] > args[0]);
+  }
+}
